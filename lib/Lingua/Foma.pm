@@ -216,8 +216,7 @@ All automaton methods return their invocant to make them easily chainable.
 
 =head2 unify
 
-  Regular Expression: B<A | B>
-
+  # Regular Expression: A | B
 
   my $fsm_1 = Lingua::Foma->new('{climb}');
   my $fsm_2 = Lingua::Foma->new('{jump}');
@@ -238,8 +237,7 @@ Returns the invocant for chaining.
 
 =head2 concat
 
-  Regular Expression: B<A B>
-
+  # Regular Expression: A B
 
   my $fsm_1 = Lingua::Foma->new('{climb}');
   my $fsm_2 = Lingua::Foma->new('{ing}');
@@ -270,6 +268,7 @@ of Foma.
 
 Load an automaton by passing a filename.
 Automata can be saved using L<save|/save>.
+
 I<Files with multiple transducers are currently not supported.>
 
 =head2 save
@@ -372,7 +371,7 @@ modify it under the terms of the
 L<GNU General Public License version 2|https://www.gnu.org/licenses/gpl-2.0.txt>.
 
 
-=head2 Foma (bundled)
+=head2 Foma 0.9.17alpha (bundled)
 
 Copyright (C) 2008-2012, Mans Hulden.
 
